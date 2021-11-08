@@ -1,5 +1,12 @@
 <div class="container">
 <div class="row">
-  <app-rental></app-rental>
+  <h3>Suggested LIST</h3>
+  <li  routerLinkActive="active"
+  [routerLinkActiveOptions]="{ exact: true }"><a
+  routerLink="/houses">
+  Info for buy Houses</a>
+  </li>
+  <hr>
+  <router-outlet></router-outlet>
 </div>
 </div>

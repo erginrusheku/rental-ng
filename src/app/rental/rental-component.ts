@@ -1,5 +1,6 @@
-import { style } from "@angular/animations";
+
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 
 @Component({
@@ -12,4 +13,12 @@ styleUrls: ['./rental-component.css' ]
 
 export class RentalComponent {
 
+  constructor(private router: Router) { }
+
+OnBack() {
+ this.router.navigate(['./'])
 }
+
+}
+
+
