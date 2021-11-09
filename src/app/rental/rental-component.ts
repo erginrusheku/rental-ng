@@ -15,9 +15,9 @@ export class RentalComponent {
 
   constructor(private router: Router) { }
 
-OnBack() {
- this.router.navigate(['./'])
-}
+  OnBack() {
+    this.router.navigate(['./home'])
+   }
 
 }
 

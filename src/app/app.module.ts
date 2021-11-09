@@ -5,14 +5,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 
  const appRoutes: Routes = [
- { path: 'houses' , component: RentalComponent }
+
+ {path: 'home', component: HomeComponent },
+ { path: 'houses' , component: RentalComponent },
  ];
 @NgModule({
   declarations: [
     AppComponent,
-    RentalComponent
+    RentalComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
