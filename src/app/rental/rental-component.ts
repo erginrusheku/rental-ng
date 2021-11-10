@@ -15,10 +15,10 @@ export class RentalComponent {
 
   constructor(private router: Router) { }
 
-  OnBack() {
-    this.router.navigate(['./home'])
-   }
 
+  OnBack() {
+    this.router.navigate(['./'])
+  }
 }
 
 

@@ -13,7 +13,5 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onInfo() {
-   this.router.navigate(['./houses'])
-  }
+
 }
