@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+
+    <div >
+      <a class="pull-right" style="cursor: pointer;" (click)="OnBack()">Back</a>
+
+    </div>
+    <br>
+<hr>
+<br>
+
+    <div class="card col-md-4" style="display: inline;" *ngFor="let house of houses"> <a href="#" >
+     <img  class="card-img-top" src={{house.image}} alt={{house.title}} width="300px"> </a>
+
+      <div class="card-body">
+        <h5 class="card-title">{{house.title}}</h5>
+        <p class="card-text">{{house.street}}</p>
+        <p class="card-text">{{house.meters}}</p>
+        <p class="card-text">{{house.price}}</p>
+        <p class="card-text">{{house.numbers}}</p>
+       <button class="btn btn-default">Link</button>
+      </div>
+      <hr>
+
+      </div>
+
+
+

@@ -1,4 +1,5 @@
-import { RentalComponent } from './rental/rental-component';
+import { Houses } from './houses/houses.model';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,18 +9,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
-
+import { HousesComponent } from './houses/houses.component';
  const appRoutes: Routes = [
 
  {path: '', component: HomeComponent },
- { path: 'houses' , component: RentalComponent },
+ { path: 'houses' , component: HousesComponent },
  ];
 @NgModule({
   declarations: [
     AppComponent,
-    RentalComponent,
+
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    HousesComponent
   ],
   imports: [
     BrowserModule,
