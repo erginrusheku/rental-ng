@@ -1,0 +1,29 @@
+<div>
+  <img src="{{house?.image}}" alt="{{house?.title}}" width="500px" class="col-md-5">
+</div>
+    <br><br>
+<div>
+    <div class="form-floating mb-3 col-md-5">
+      <input type="text" class="form-control"
+      placeholder="House" [(ngModel)] = "house!.title">
+      <label>House</label>
+    </div>
+    <div class="form-floating mb-3 col-md-5">
+      <input type="text" class="form-control"  placeholder="Street" [(ngModel)] = "house!.street">
+      <label>Street</label>
+    </div>
+    <div class="form-floating mb-3 col-md-5">
+      <input type="text" class="form-control"  placeholder="Meters" [(ngModel)] = "house!.meters">
+      <label >Meters</label>
+    </div>
+    <div class="form-floating mb-3 col-md-5">
+      <input type="text" class="form-control"  placeholder="Price" [(ngModel)] = "house!.price">
+      <label>Price</label>
+    </div>
+    <div class="form-floating mb-3 col-md-5">
+      <input type="number" class="form-control"  placeholder="Number" [(ngModel)] = "house!.numbers">
+      <label >Number</label>
+    </div>
+</div>
+<button class="btn btn-success" (click)="onSave()">Save</button>
+

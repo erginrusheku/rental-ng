@@ -1,0 +1,27 @@
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="40" fill="gray" (click)="addHouse()" style="cursor: pointer;" class="bi bi-plus-lg" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+  </svg>
+  <button class="btn btn-light me-md-2" type="button" (click)="addHouse()">Add house</button>
+
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-2 g-4" >
+  <div class="col">
+    <div class="card" *ngFor="let house of houses">
+      <img src="{{house?.image}}" width="335px" height="200px">
+      <div class="card-body">
+        <h5 class="card-title">{{house?.title}}</h5>
+        <p class="card-text">{{house?.street}}</p>
+        <p class="card-text">{{house?.meters}}</p>
+        <p class="card-text">{{house?.price}}</p>
+        <p class="card-text">{{house?.numbers}}</p>
+
+        <button class="btn btn-primary" (click)="onHouseClick(house)">Link</button>
+      </div>
+
+    </div>
+
+  </div>

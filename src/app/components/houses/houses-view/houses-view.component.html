@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="gray" (click)="onBackBtn()" style="cursor: pointer;" class="bi bi-caret-left-fill" viewBox="0 0 16 16" >
+  <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+</svg>
+ <button class="btn btn-light" (click)="onBackBtn()">Back</button>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+    <button class="btn btn-success me-md-2" (click)="onEdit()" type="button">Edit</button>
+    <button class="btn btn-danger" (click)="onDelete()" type="button">Delete</button>
+</div>
+
+
+<div class="card mb-3" style="max-width: 1000px;">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <img src="{{house?.image}}" class="img-fluid rounded-start" alt="{{house?.title}}">
+    </div>
+    <div class="col-md-4">
+      <div class="card-body text-end" style="margin-top: 40px;">
+       <h4><label>Title:</label></h4>
+      <p class="card-text lead  h5">{{house?.title}}</p>
+       <label for="">Street:</label>
+       <p class="card-text">{{house?.street}} </p>
+       <label for="">Meters:</label>
+       <p class="card-text"> {{house?.meters}} </p>
+       <label for="">Price:</label>
+       <p class="card-text">{{house?.price}} </p>
+       <label for="">Number:</label>
+       <p class="card-text">{{house?.numbers}} </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
